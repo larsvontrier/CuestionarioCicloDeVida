@@ -1,4 +1,4 @@
-## Cuestionarios
+## Cuestionarios (ciclo de vida)
 
 Este proyecto es un ejemplo de navegación dentro de una actividad para trabajar con cuestionarios.
 
