@@ -16,11 +16,14 @@ import com.pepinho.pmdm.cuestionarios.model.Pregunta
 import com.pepinho.pmdm.cuestionarios.model.PreguntaTest
 import com.pepinho.pmdm.cuestionarios.model.PreguntaVerdaderoFalso
 
+private const val TAG = "MainActivity"
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
     private val preguntasRepository = PreguntaRepository
+
 
     private var iActual: Int = 0
 
@@ -30,6 +33,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.d(TAG, "llamada a onCreate(Bundle?)")
         if (savedInstanceState != null) {
             iActual = savedInstanceState.getInt(INDICE)
         }
@@ -84,6 +88,31 @@ class MainActivity : AppCompatActivity() {
 //        updatePregunta() // Se precisa actualizar, porque onCreate se llama antes que onRestoreInstanceState
 //        Log.d("onRestoreInstanceState", "onRestoreInstanceState")
 //    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.d(TAG, "llamada a onStart()")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d(TAG, "llamada a onResume()")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d(TAG, "llamada a onPause()")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d(TAG, "llamada a onStop()")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(TAG, "llamada a onDestroy()")
+    }
 
     /**
      * Actualiza la pregunta actual en la vista
