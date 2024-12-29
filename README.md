@@ -4,9 +4,9 @@ Este proyecto es un ejemplo de navegación dentro de una actividad para trabajar
 
 Emplea las siguientes tecnologías:
 
-- viewBinding
+- `viewBinding`
 - Layouts
-- Recursos de cadenas (strings)
+- Recursos de cadenas (_strings_)
 - Modelo de datos de preguntas
 - Un repositorio de preguntas (a mano), que debe sustituirse por un repositorio de preguntas de una base de datos o una API.
 - **Mantener el estado** al girar la pantalla.

@@ -5,11 +5,14 @@ import android.util.Log
 import android.widget.RadioButton
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 import androidx.core.view.isVisible
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewmodel.viewModelFactory
 import com.pepinho.ciclodevida.databinding.ActivityMainBinding
 import com.pepinho.ciclodevida.repositorio.PreguntaRepository
 import com.pepinho.pmdm.cuestionarios.model.Pregunta
@@ -23,7 +26,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     private val preguntasRepository = PreguntaRepository
-
 
     private var iActual: Int = 0
 

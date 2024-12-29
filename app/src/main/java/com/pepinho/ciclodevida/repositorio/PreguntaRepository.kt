@@ -6,6 +6,10 @@ import com.pepinho.pmdm.cuestionarios.model.PreguntaTest
 import com.pepinho.pmdm.cuestionarios.model.PreguntaVerdaderoFalso
 import java.util.Collections
 
+/**
+ * Clase que simula un repositorio de preguntas
+ * La clase es un objeto singleton que contiene una lista mutable de preguntas.
+ */
 object PreguntaRepository {
 
     // Podría iniciarse en bloque init.
